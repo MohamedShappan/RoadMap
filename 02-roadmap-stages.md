@@ -50,6 +50,17 @@ Dynamic programming, tree/graph algorithms, tries, sorting implementations, Leet
 - What is a race condition? Give a concrete example.
 - Difference between a list and a set? When do you choose each?
 
+### References & Study Sources
+- **Data Structures & Big-O**:
+  - 📖 *A Common-Sense Guide to Data Structures and Algorithms* by Jay Wengrow (exceptional visual intuition for Big-O, hash tables, and arrays)
+- **Language Deep Dive**:
+  - 📖 Official docs of your chosen language (e.g., *The Go Programming Language* by Donovan & Kernighan, *Effective Java* by Joshua Bloch, or *The Rust Programming Language*)
+- **Concurrency & Threads**:
+  - 📄 *Operating Systems: Three Easy Pieces (OSTEP)* — Concurrency virtualization chapters (free at ostep.org)
+- **Version Control**:
+  - 📖 *Pro Git* by Scott Chacon and Ben Straub (free online at [git-scm.com/book](https://git-scm.com/book))
+  - 💻 *Learn Git Branching* ([learngitbranching.js.org](https://learngitbranching.js.org/)) (interactive visual tutorials)
+
 ### Mastery signal
 You can write a 300-line program with tests without fighting syntax, and you instinctively reach for a hash map instead of a nested loop.
 
@@ -97,6 +108,17 @@ Stored procedures, triggers, recursive CTEs, window functions (revisit in stage 
 - What causes a deadlock, and how do you prevent one?
 - INNER vs LEFT JOIN — give a case where the choice changes the answer.
 - Why would you denormalize?
+
+### References & Study Sources
+- **Relational Modeling & Schema Design**:
+  - 📖 *Database Design for Mere Mortals* by Michael J. Hernandez (approachable guide to normalization, keys, and table relationships)
+  - 📖 *PostgreSQL Official Documentation: Data Definition & Constraints* ([postgresql.org/docs](https://www.postgresql.org/docs/current/ddl-constraints.html))
+- **SQL Practice**:
+  - 💻 *PGExercises* ([pgexercises.com](https://pgexercises.com/)) (interactive exercises with immediate execution on PostgreSQL data)
+  - 💻 *SQLBolt* ([sqlbolt.com](https://sqlbolt.com/)) (interactive query drills for joins, filters, and aggregations)
+- **Transactions & Concurrency**:
+  - 📖 *Designing Data-Intensive Applications (DDIA)* by Martin Kleppmann — Chapter 7: *Transactions* (authoritative coverage of ACID, race conditions, dirty/phantom reads, and isolation levels)
+  - 🎓 *CMU 15-445: Intro to Database Systems* by Andy Pavlo (Lectures on Concurrency Control and Two-Phase Locking on YouTube)
 
 ### Mastery signal
 Given a business description, you can produce a sane normalized schema in 20 minutes, defend every constraint, and explain which indexes you'd add and why — *before* seeing the queries.
@@ -147,6 +169,16 @@ OSI-layer memorization, subnetting arithmetic, BGP/routing protocols, Ethernet/A
 - What's a reverse proxy, and what do you use one for?
 - What causes a 502? A 503? A 504? How do they differ?
 - Connection refused vs connection timeout — what does each tell you about the failure?
+
+### References & Study Sources
+- **Transport & Web Protocols**:
+  - 📖 *High Performance Browser Networking (HPBN)* by Ilya Grigorik (free online at [hpbn.co](https://hpbn.co/)) — Chapters on TCP, UDP, TLS, and HTTP/1.1 to HTTP/2/3
+  - 📖 *Computer Networking: A Top-Down Approach* by Kurose & Ross (Application and Transport Layer chapters)
+- **Production Architecture & Proxies**:
+  - 📄 *Cloudflare Learning Center* ([cloudflare.com/learning](https://www.cloudflare.com/learning/)) — clear guides on DNS resolution, CDN, reverse proxies, and TLS handshakes
+  - 📄 *MDN Web Docs: HTTP* ([developer.mozilla.org/en-US/docs/Web/HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)) — status code reference, headers, and caching mechanisms
+- **Hands-On Inspection Tools**:
+  - 🛠️ `curl -v`, `dig +trace`, and Wireshark / `tcpdump` for packet inspection
 
 ### Mastery signal
 Given "users report the site is slow," you can name six distinct layers where it could be, and the command you'd run to rule each one in or out.
@@ -200,6 +232,17 @@ GraphQL, gRPC, microservices, event sourcing, CQRS, hexagonal architecture as do
 - Where does a transaction begin and end in your codebase?
 - How do you make a payment endpoint safe to retry?
 
+### References & Study Sources
+- **REST API Design**:
+  - 📖 *Build APIs You Won't Hate* by Phil Sturgeon (practical guide on idempotency, status codes, serialization, and pagination)
+  - 📄 *Google Cloud API Design Guide* ([cloud.google.com/apis/design](https://cloud.google.com/apis/design)) & *Microsoft REST API Guidelines*
+- **Authentication & Security Standards**:
+  - 📄 *OWASP Authentication Cheat Sheet* & *JSON Web Token (JWT) Cheat Sheet* ([cheatsheetseries.owasp.org](https://cheatsheetseries.owasp.org/))
+  - 📄 *RFC 6749 (OAuth 2.0 Authorization Framework)* for mental models
+- **Testing & Application Architecture**:
+  - 📖 *Unit Testing Principles, Practices, and Patterns* by Vladimir Khorikov (definitive guide on unit vs integration tests, mocks vs stubs vs fakes)
+  - 📄 *The Twelve-Factor App* ([12factor.net](https://12factor.net/)) (config, environment separation, backing services)
+
 ### Mastery signal
 You could hand your project to another developer with only the README, and they could run it, understand the layering, and add an endpoint without asking you questions.
 
@@ -247,6 +290,14 @@ Refactor your Stage 3 API: swappable storage backends, pluggable auth, middlewar
 - Why Dependency Injection? What does it buy you concretely?
 - When is a design pattern the wrong choice?
 - What does "composition over inheritance" mean in practice?
+
+### References & Study Sources
+- **Pattern Guides & Recognition**:
+  - 📖 *Head First Design Patterns* by Eric Freeman & Elisabeth Robson (the most intuitive, anti-academic walkthrough of Strategy, Observer, Decorator, and Factory)
+  - 💻 *Refactoring.Guru: Design Patterns* ([refactoring.guru/design-patterns](https://refactoring.guru/design-patterns)) (visual catalogs, structure diagrams, and real-world code implementations)
+- **Refactoring & Clean Architecture**:
+  - 📖 *Refactoring to Patterns* by Joshua Kerievsky (shows how to evolve messy conditionals into patterns naturally rather than upfront over-engineering)
+  - 📄 Martin Fowler's Architecture & Design Catalog ([martinfowler.com](https://martinfowler.com/)) — articles on Repository, Gateway, and Dependency Injection
 
 ### Mastery signal
 You can look at a requirement — "we need to support three shipping calculators" — and immediately say "Strategy, injected via a factory keyed on carrier," *and* you can also say when it's not worth it.
@@ -298,6 +349,17 @@ Writing your own sharding layer, DB internals tuning (`shared_buffers`, vacuum t
 - How do read replicas help, and what do they break?
 - When do you shard, and what do you lose?
 - Cache invalidation strategies — which do you pick and why?
+
+### References & Study Sources
+- **Indexing & Query Performance**:
+  - 📖 *Use The Index, Luke!* by Markus Winand ([use-the-index-luke.com](https://use-the-index-luke.com/)) (the definitive reference on B-trees, composite index ordering, and index-only scans)
+  - 📖 *SQL Performance Explained* by Markus Winand (the condensed physical book covering performance tuning on PostgreSQL & MySQL)
+  - 🛠️ *Explain Dalibo* ([explain.dalibo.com](https://explain.dalibo.com/)) & *depesz EXPLAIN* ([explain.depesz.com](https://explain.depesz.com/)) (tools to visualize and diagnose `EXPLAIN (ANALYZE, BUFFERS)` trees)
+- **Replication, Partitioning & Scaling**:
+  - 📖 *Designing Data-Intensive Applications (DDIA)* by Martin Kleppmann — Chapter 5: *Replication* (replication lag, topologies) & Chapter 6: *Partitioning* (sharding strategies and secondary indexes)
+- **Caching & In-Memory Stores**:
+  - 🎓 *Redis University* ([university.redis.com](https://university.redis.com/)) — Course *RU101: Introduction to Redis Data Structures*
+  - 📄 *AWS Whitepaper: Database Caching Strategies Using Redis* (thundering herd, TTLs, and cache-aside patterns)
 
 ### Mastery signal
 Given a query plan you've never seen, you can point at the expensive node and propose two fixes with a trade-off for each.
@@ -353,6 +415,16 @@ Make your Stage 3–5 API **operable**: full observability, resilience patterns,
 - How do you handle secrets?
 - Name three common web vulnerabilities and their fixes.
 
+### References & Study Sources
+- **Observability & Reliability**:
+  - 📖 *Site Reliability Engineering (SRE) Book* by Google ([sre.google/sre-book/](https://sre.google/sre-book/)) — Chapter 6: *Monitoring Distributed Systems* (the Four Golden Signals)
+  - 📖 *Release It! Design and Deploy Production-Ready Software* by Michael T. Nygard (essential reading on Circuit Breakers, Bulkheads, Timeouts, and cascade failures)
+  - 📄 *OpenTelemetry Documentation* ([opentelemetry.io/docs](https://opentelemetry.io/docs/)) — concepts of Traces, Spans, Metrics, and Correlation IDs
+- **Containers & Operations**:
+  - 📖 *Docker Deep Dive* by Nigel Poulton & Official Docker Guides ([docs.docker.com/get-started](https://docs.docker.com/get-started/))
+- **Production Web Security**:
+  - 📄 *OWASP Top 10 Security Risks* ([owasp.org/Top10/](https://owasp.org/Top10/)) — focus on SQL injection, Broken Object-Level Authorization (IDOR), and Security Misconfigurations
+
 ### Mastery signal
 Something breaks in your own project and you find the cause from logs and metrics alone — without adding a print statement.
 
@@ -398,6 +470,16 @@ Raft/Paxos internals, CRDTs, vector clocks, exotic architectures, memorizing any
 - What is idempotency and how do you implement it?
 - How would you handle 1M requests per second?
 - CAP theorem — and what do you actually pick in practice?
+
+### References & Study Sources
+- **System Design Core Guides & Interview Primers**:
+  - 📖 *System Design Interview – An Insider's Guide* (Volume 1 & 2) by Alex Xu (structured blueprints for rate limiters, key-value stores, distributed message queues, notification services)
+  - 💻 *The System Design Primer* by Donne Martin ([github.com/donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)) (comprehensive open-source collection of system design topics, diagrams, and exercises)
+- **Deep Distributed Systems Principles**:
+  - 📖 *Designing Data-Intensive Applications (DDIA)* by Martin Kleppmann (the industry standard for data systems, batch/stream processing, and consistency models)
+- **Real-World Engineering Case Studies**:
+  - 📄 *High Scalability Architecture Case Studies* ([highscalability.com](http://highscalability.com/))
+  - 📄 Engineering blogs: Uber Engineering Blog, Netflix TechBlog, Meta Engineering, and Stripe Engineering
 
 ### Mastery signal
 You can take an unfamiliar prompt, run the framework in 45 minutes, defend every component against "why not X?", name the bottleneck at each scale tier, and explicitly state what you traded away.

@@ -367,3 +367,21 @@ You've mastered this section when you can:
 - Design an idempotent write using a `UNIQUE` constraint
 
 Scenario tests are in [14 — Mastery Checkpoints](./14-mastery-checkpoints.md).
+
+---
+
+## References & Recommended Reading
+
+- **Indexes & Query Performance**:
+  - 📖 *Use The Index, Luke!* by Markus Winand ([use-the-index-luke.com](https://use-the-index-luke.com/))
+  - 📖 *SQL Performance Explained* by Markus Winand
+  - 🛠️ *Explain Dalibo* ([explain.dalibo.com](https://explain.dalibo.com/)) & *depesz EXPLAIN* ([explain.depesz.com](https://explain.depesz.com/))
+- **Transactions & Distributed Storage**:
+  - 📖 *Designing Data-Intensive Applications (DDIA)* by Martin Kleppmann (Chapters 3, 5, 6, 7)
+  - 🎓 *CMU 15-445: Intro to Database Systems* by Andy Pavlo (Lectures on Concurrency Control, B+ Trees, Logging)
+- **Hands-On SQL Practice**:
+  - 💻 *PGExercises* ([pgexercises.com](https://pgexercises.com/))
+  - 📖 *PostgreSQL Official Documentation: Indexes & EXPLAIN* ([postgresql.org/docs](https://www.postgresql.org/docs/current/indexes.html))
+- **Caching & In-Memory**:
+  - 🎓 *Redis University* ([university.redis.com](https://university.redis.com/)) (RU101: Introduction to Redis Data Structures)
+
